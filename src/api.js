@@ -36,7 +36,7 @@ export const status = (cb) => {
    socket.on('status', (err, data) => {
 		console.log(data)
 	});
-    socket.on('payin', (err, data) => {
+   socket.on('payin', (err, data) => {
 	  cb(data)
 	  if(err){
 	  	console.log(err)
